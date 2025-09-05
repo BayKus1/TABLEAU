@@ -9,31 +9,45 @@ includes visualizations of key performance indicators such as sales amounts, pro
 ---
 
 ## Data Description
-The dataset contains anonymized customer-level data with the following columns:
+## marketing_data.csv
 
-| Column Name        | Description |
-|-------------------|-------------|
-| ID                | Unique customer identifier |
-| Year_Birth        | Customer birth year |
-| Age               | Customer age |
-| Education         | Education level (Basic, 2n Cycle, Graduation, Master, PhD) |
-| Marital_Status    | Marital status of the customer |
-| Income            | Annual income |
-| Kidhome           | Number of kids at home |
-| Teenhome          | Number of teenagers at home |
-| Dt_Customer       | Date the customer joined |
-| Recency           | Number of days since last purchase |
-| AmtLiq            | Amount spent on liquid products |
-| AmtVege           | Amount spent on vegetables |
-| AmtNonVeg         | Amount spent on non-vegetables |
-| AmtPes            | Amount spent on pescatarian products |
-| AmtChocolates     | Amount spent on chocolates |
-| AmtComm           | Amount spent on other commodities |
-| NumDeals          | Number of deals purchased |
-| NumWebBuy         | Number of web purchases |
-| NumWalkinPur      | Number of walk-in purchases |
-| NumVisits         | Number of store visits |
-| Response          | Response to the latest marketing campaign (0 = no, 1 = yes) |
-| Complain          | Complaint filed (0 = no, 1 = yes) |
-| Country           | Customer country code |
-| Count_success     | Number of successful transactions |
+| Column           | Sample Value   | Interpretation |
+|-----------------|----------------|----------------|
+| ID               | 5642           | Unique customer ID |
+| Year_Birth       | 1980           | Customer’s year of birth |
+| Education        | Master         | Educational qualification of the customer |
+| Marital_Status   | Together       | Customer’s marital status |
+| Income           | $62,499.00     | Customer’s annual income |
+| Kidhome          | 1              | Number of kids the customer has |
+| Teenhome         | 1              | Number of teenagers the customer has |
+| Dt_Customer      | 12/09/2013     | Date of customer registration with the company |
+| Recency          | 99             | Number of days since customer’s last purchase |
+| AmtLiq           | 140            | Amount spent on alcoholic beverages |
+| AmtVege          | 4              | Amount spent on vegetables |
+| AmtNonVeg        | 61             | Amount spent on meat items |
+| AmtPes           | 25             | Amount spent on fish products |
+| AmtChocolates    | 30             | Amount spent on chocolates |
+| AmtComm          | 197            | Amount spent on commodities |
+| NumDeals         | 2              | Number of deals purchased with a discount |
+| NumWebBuy        | 3              | Number of purchases made from the website |
+| NumWalkinPur     | 6              | Number of in-store purchases |
+| NumVisits        | 4              | Number of website visits per month |
+| Response         | 1              | Boolean. 1 if the customer accepted the last campaign’s offer, 0 otherwise |
+| Complain         | 1              | Boolean. 1 if the customer had complained in the last 2 years, 0 otherwise |
+| Country          | SP             | Customer’s location (AUS = Australia, CA = Canada, GER = Germany, IND = India, ME = Montenegro, SA = South Africa, SP = Spain, US = United States) |
+| Count_success    | 1              | Total number of successful lead conversions |
+
+---
+
+## ad_data.csv
+
+| Column           | Sample Value   | Interpretation |
+|-----------------|----------------|----------------|
+| ID               | 5642           | Unique customer ID |
+| Bulkmail_ad      | 1              | Boolean. 1 if the customer converted successfully from a bulk e-mail campaign, 0 otherwise |
+| Twitter_ad       | 1              | Boolean. 1 if the customer converted successfully from a Twitter ad, 0 otherwise |
+| Instagram_ad     | 1              | Boolean. 1 if the customer converted successfully from an Instagram ad, 0 otherwise |
+| Facebook_ad      | 1              | Boolean. 1 if the customer converted successfully from a Facebook ad, 0 otherwise |
+| Brochure_ad      | 1              | Boolean. 1 if the customer converted successfully from a company brochure, 0 otherwise |
+
+---
