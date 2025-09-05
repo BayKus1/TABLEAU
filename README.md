@@ -6,9 +6,9 @@ This project contains a **Marketing Performance report** designed to analyze cus
 
 includes visualizations of key performance indicators such as sales amounts, product categories, number of visits, and campaign responses.
 
+## Data Description
 ---
 
-## Data Description
 ## marketing_data.csv
 
 | Column           | Sample Value   | Interpretation |
